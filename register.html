@@ -2,7 +2,238 @@
 <html>
 
 <head>
+    <meta charset="utf-8"><!DOCTYPE html>
+<html>
+
+<head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Registration</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="font-size: 12px;">
+        <div class="container"><a class="navbar-brand logo" href="#" style="height: 46px;font-size: 20px;">TECHNOSHIP CELL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div
+                class="collapse navbar-collapse" id="navcol-1" style="float: right;">
+                <ul class="nav navbar-nav ml-auto">
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">EVENTS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                </ul>
+        </div>
+        </div>
+    </nav>
+    <main class="page pricing-table-page">
+        <section class="clean-block clean-pricing dark">
+            <div class="container">
+                <div class="block-heading">
+                    <h2 class="text-info">Hacking Camp</h2>
+                </div>
+            </div>
+            <section class="clean-block clean-info dark">
+                <div class="container">
+                    <div class="block-heading"></div>
+                    <div class="row align-items-center">
+                        <div class="col-md-6"><img class="img-thumbnail" src="assets/img/tech/hackcamp.jpeg"></div>
+                        <div class="col-md-6">
+                            
+                            <div class="getting-started-info">
+                               <p><em>" Knowing is not enough, we must apply 
+										Willing is not enough , we must do"<br>
+                                 ~Bruce lee</em></p>
+								 
+								 <p>Why would you let your data be hacked by others... Let's hack to defend
+If you're great at observing and solving problems, come and give it a try...
+								 </p>
+								 <br>
+								 <p>
+								 A two day free program to introduce "CAPTURE THE FLAG" among you. The only requirement is your willingness.<br>
+								 Experience the thrill of learning something new.
+								 </p>
+								 <p>
+								 <i class="fa fa-calendar-o" aria-hidden="true"></i>
+								 26 27 DECEMBER
+								 </p>
+								 <p>
+								 <i class="fa fa-clock-o" aria-hidden="true"></i>
+								 10 AM
+								 </p>
+								 
+								 <p>
+								 <i class="fa fa-window-maximize" aria-hidden="true"></i>
+								 CISCO WEBEX MEET
+								 <br>
+								 <a href="https://www.webex.com/downloads.html ">Download Now</a>
+								 </p>
+								 </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <div class="row register-form" >
+                <div class="col-md-8 offset-md-2"  >
+                    
+                        <h1>Register Form</h1>
+                        
+						
+						<img src="https://source.unsplash.com/y0_je0DHS78" class="img-fluid" alt="Responsive image">
+						<div class="container">
+							<p>
+								Contact : Akshay M R <br>
+								90744 81005
+							</p>
+						
+						</div>
+ 
+			
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer class="page-footer dark">
+        <div class="footer-copyright">
+            <p>© 2020 Copyright Text</p>
+        </div>
+    </footer>
+	<script>
+	
+		 // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyD5kGvUWOxOHJRs1qeogsP1A9yofzGnr4Y",
+    authDomain: "fosscell-website-734f1.firebaseapp.com",
+    projectId: "fosscell-website-734f1",
+    storageBucket: "fosscell-website-734f1.appspot.com",
+    messagingSenderId: "428566382480",
+    appId: "1:428566382480:web:b140ecc4aa6d934e971515",
+    measurementId: "G-HFRQZTNGPY"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ 
+ // Reference messages collection
+var messagesRef = firebase.database().ref('hack_registration');
+
+// Listen for form submit
+document.getElementById('contactForm').addEventListener('submit', submitForm);
+
+// Submit form
+function submitForm(e){
+  e.preventDefault();
+
+  // Get values
+  var name = getInputVal('name');
+  var mail = getInputVal('mail');
+  var mobile = getInputVal('mobile');
+  var college = getInputVal('college');
+  var semester = getInputVal('semester');
+  var department = getInputVal('department');
+   
+ 
+  
+
+  // Save message
+  saveMessage(name,mail,mobile, college, department,semester);
+  
+
+
+  // Show alert
+  document.querySelector('.alert').style.display = 'block';
+  
+
+  // Hide alert after 3 seconds
+  setTimeout(function(){
+    document.querySelector('.alert').style.display = 'none';
+  },2000);
+   setTimeout(function(){
+  window.location = "https://chat.whatsapp.com/BD76dOvWYZO44Rlp2tF9CF";
+ },3000);
+
+  // Clear form
+ document.getElementById('contactForm').reset();
+ 
+
+  
+}
+
+// Function to get get form values
+function getInputVal(id){
+  return document.getElementById(id).value;
+}
+
+// Save message to firebase
+function saveMessage(name,mail, mobile, college, department,semester){
+  var newMessageRef = messagesRef.push();
+  newMessageRef.set({
+    name: name,
+    mail:mail,
+    mobile:mobile,
+	college:college,
+	department:department,
+	semester:semester,
+    
+  });
+}
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+  
+ 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Registration</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">

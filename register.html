@@ -2,13 +2,9 @@
 <html>
 
 <head>
-    <meta charset="utf-8"><!DOCTYPE html>
-<html>
-
-<head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Registration</title>
+    <title>Contact Us - Brand</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,10 +12,40 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
-	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
+	<style>
+		<style>
+	    @import url(http://fonts.googleapis.com/css?family=Roboto);
+    *
+    {
+        font-family: 'Roboto' , sans-serif;
+    }
+    body
+    {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);
+    } 
+    .error-template
+    {
+        padding: 40px 15px;
+        text-align: center;
+    }
+    .error-actions
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .error-actions .btn
+    {
+        margin-right: 10px;
+    }
+    .message-box h1
+    {
+        color: #252932;
+        font-size: 98px;
+        font-weight: 700;
+        line-height: 98px;
+        text-shadow: rgba(61, 61, 61, 0.3) 1px 1px, rgba(61, 61, 61, 0.2) 2px 2px, rgba(61, 61, 61, 0.3) 3px 3px;
+    }
+	</style>
 </head>
 
 <body>
@@ -29,392 +55,64 @@
                 class="collapse navbar-collapse" id="navcol-1" style="float: right;">
                 <ul class="nav navbar-nav ml-auto">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">EVENTS</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link" href="pricing.html">EVENTS</a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="contact-us.html">Contact Us</a></li>
                 </ul>
         </div>
         </div>
     </nav>
-    <main class="page pricing-table-page">
-        <section class="clean-block clean-pricing dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Hacking Camp</h2>
+    <main class="page contact-us-page">
+        
+		<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="error-template">
+                <h1>
+                    :) Oops!</h1>
+                <h2>
+                    Temporarily down for maintenance</h2>
+                <h1>
+                    We’ll be back soon!</h1>
+                <div>
+                    <p>
+                        Sorry for the inconvenience but we’re performing some maintenance at the moment.
+                        we’ll be back online shortly!</p>
+                    <p>
+                        — The Team</p>
+                </div>
+                <div class="error-actions">
+                    <a href="index.html" style="margin-top: 10px;" class="btn btn-info btn-lg"><span class="glyphicon glyphicon-home">
+                    </span>Take Me Home </a>
                 </div>
             </div>
-            <section class="clean-block clean-info dark">
-                <div class="container">
-                    <div class="block-heading"></div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6"><img class="img-thumbnail" src="assets/img/tech/hackcamp.jpeg"></div>
-                        <div class="col-md-6">
-                            
-                            <div class="getting-started-info">
-                               <p><em>" Knowing is not enough, we must apply 
-										Willing is not enough , we must do"<br>
-                                 ~Bruce lee</em></p>
-								 
-								 <p>Why would you let your data be hacked by others... Let's hack to defend
-If you're great at observing and solving problems, come and give it a try...
-								 </p>
-								 <br>
-								 <p>
-								 A two day free program to introduce "CAPTURE THE FLAG" among you. The only requirement is your willingness.<br>
-								 Experience the thrill of learning something new.
-								 </p>
-								 <p>
-								 <i class="fa fa-calendar-o" aria-hidden="true"></i>
-								 26 27 DECEMBER
-								 </p>
-								 <p>
-								 <i class="fa fa-clock-o" aria-hidden="true"></i>
-								 10 AM
-								 </p>
-								 
-								 <p>
-								 <i class="fa fa-window-maximize" aria-hidden="true"></i>
-								 CISCO WEBEX MEET
-								 <br>
-								 <a href="https://www.webex.com/downloads.html ">Download Now</a>
-								 </p>
-								 </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="row register-form" >
-                <div class="col-md-8 offset-md-2"  >
-                    
-                        <h1>Register Form</h1>
-                        
-						
-						<img src="https://source.unsplash.com/y0_je0DHS78" class="img-fluid" alt="Responsive image">
-						<div class="container">
-							<p>
-								Contact : Akshay M R <br>
-								90744 81005
-							</p>
-						
-						</div>
- 
-			
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="page-footer dark">
-        <div class="footer-copyright">
-            <p>© 2020 Copyright Text</p>
         </div>
-    </footer>
-
-
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-  
- 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-    <script src="assets/js/script.min.js"></script>
-</body>
-
-</html>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Registration</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,600,600i">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
-    <link rel="stylesheet" href="assets/css/styles.min.css">
-	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-database.js"></script>
-</head>
-
-<body>
-    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar" style="font-size: 12px;">
-        <div class="container"><a class="navbar-brand logo" href="#" style="height: 46px;font-size: 20px;">TECHNOSHIP CELL</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1" style="float: right;">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="register.html">EVENTS</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="about-us.html">About Us</a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="contact-us.html">Contact Us</a></li>
-                </ul>
+        <div class="col-md-6">
+            <svg class="svg-box" width="380px" height="500px" viewbox="0 0 837 1045" version="1.1"
+                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+                        <path d="M353,9 L626.664028,170 L626.664028,487 L353,642 L79.3359724,487 L79.3359724,170 L353,9 Z" id="Polygon-1" stroke="#3bafda" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                        <path d="M78.5,529 L147,569.186414 L147,648.311216 L78.5,687 L10,648.311216 L10,569.186414 L78.5,529 Z" id="Polygon-2" stroke="#7266ba" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                        <path d="M773,186 L827,217.538705 L827,279.636651 L773,310 L719,279.636651 L719,217.538705 L773,186 Z" id="Polygon-3" stroke="#f76397" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                        <path d="M639,529 L773,607.846761 L773,763.091627 L639,839 L505,763.091627 L505,607.846761 L639,529 Z" id="Polygon-4" stroke="#00b19d" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                        <path d="M281,801 L383,861.025276 L383,979.21169 L281,1037 L179,979.21169 L179,861.025276 L281,801 Z" id="Polygon-5" stroke="#ffaa00" stroke-width="6" sketch:type="MSShapeGroup"></path>
+                    </g>
+                </svg>
         </div>
-        </div>
-    </nav>
-    <main class="page pricing-table-page">
-        <section class="clean-block clean-pricing dark">
-            <div class="container">
-                <div class="block-heading">
-                    <h2 class="text-info">Hacking Camp</h2>
-                </div>
-            </div>
-            <section class="clean-block clean-info dark">
-                <div class="container">
-                    <div class="block-heading"></div>
-                    <div class="row align-items-center">
-                        <div class="col-md-6"><img class="img-thumbnail" src="assets/img/tech/hackcamp.jpeg"></div>
-                        <div class="col-md-6">
-                            
-                            <div class="getting-started-info">
-                               <p><em>" Knowing is not enough, we must apply 
-										Willing is not enough , we must do"<br>
-                                 ~Bruce lee</em></p>
-								 
-								 <p>Why would you let your data be hacked by others... Let's hack to defend
-If you're great at observing and solving problems, come and give it a try...
-								 </p>
-								 <br>
-								 <p>
-								 A two day free program to introduce "CAPTURE THE FLAG" among you. The only requirement is your willingness.<br>
-								 Experience the thrill of learning something new.
-								 </p>
-								 <p>
-								 <i class="fa fa-calendar-o" aria-hidden="true"></i>
-								 26 27 DECEMBER
-								 </p>
-								 <p>
-								 <i class="fa fa-clock-o" aria-hidden="true"></i>
-								 10 AM
-								 </p>
-								 
-								 <p>
-								 <i class="fa fa-window-maximize" aria-hidden="true"></i>
-								 CISCO WEBEX MEET
-								 <br>
-								 <a href="https://www.webex.com/downloads.html ">Download Now</a>
-								 </p>
-								 </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <div class="row register-form" >
-                <div class="col-md-8 offset-md-2"  >
-                    <form class="custom-form"  id="contactForm">
-                        <h1>Register Form</h1>
-                        
-						
-						
-
-  <div class="form-group w-50">
-    <label for="formGroupExampleInput">Name</label>
-    <input type="text" class="form-control" id="name" required>
-  </div>
-  <div class="form-group w-50">
-    <label for="formGroupExampleInput">E-mail</label>
-    <input type="text" class="form-control" id="mail" required>
-  </div>
-  <div class="form-group w-50">
-    <label for="formGroupExampleInput">Mobile</label>
-    <input type="text" class="form-control" id="mobile" required>
-  </div>
-  <div class="form-group w-50">
-    <label for="formGroupExampleInput">College</label>
-    <input type="text" class="form-control" id="college" required>
-  </div>
-  <div class="form-group w-50">
-    <label for="formGroupExampleInput">Department</label>
-    <select  id="department"  class="form-group w-50" required>
-				<option >CSE</option>
-				<option >MECH</option>
-				<option >EC</option>
-				<option >EEE</option>
-				<option>IT</option>
-			</select>	
-		
-  </div>
-  <div  class="form-group w-50">
-    <label for="formGroupExampleInput">Semester</label>
-    <select  id="semester" class="form-group w-50" required>
-				<option >S1</option>
-				<option >S2</option>
-				<option >S3</option>
-				<option >S4</option>
-				<option >S5</option>
-				<option >S6</option>
-				<option >S7</option>
-				<option >S8</option>
-			</select>	
-		
-  </div>
-  
-
-                        <button class="btn btn-light submit-button" type="submit">Submit </button>
-						<div class="alert alert-success success-message" style="display:none;">Form submitted successfully<br>
-						Join Our Whatsapp group for more Updates</div>
-					</form>
-					         
-			
-                </div>
-            </div>
-        </section>
-    </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="page-footer dark">
-        <div class="footer-copyright">
-            <p>© 2020 Copyright Text</p>
-        </div>
-    </footer>
-	<script>
+    </div>
+</div>
 	
-		 // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyD5kGvUWOxOHJRs1qeogsP1A9yofzGnr4Y",
-    authDomain: "fosscell-website-734f1.firebaseapp.com",
-    projectId: "fosscell-website-734f1",
-    storageBucket: "fosscell-website-734f1.appspot.com",
-    messagingSenderId: "428566382480",
-    appId: "1:428566382480:web:b140ecc4aa6d934e971515",
-    measurementId: "G-HFRQZTNGPY"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
- 
- // Reference messages collection
-var messagesRef = firebase.database().ref('hack_registration');
-
-// Listen for form submit
-document.getElementById('contactForm').addEventListener('submit', submitForm);
-
-// Submit form
-function submitForm(e){
-  e.preventDefault();
-
-  // Get values
-  var name = getInputVal('name');
-  var mail = getInputVal('mail');
-  var mobile = getInputVal('mobile');
-  var college = getInputVal('college');
-  var semester = getInputVal('semester');
-  var department = getInputVal('department');
-   
- 
-  
-
-  // Save message
-  saveMessage(name,mail,mobile, college, department,semester);
-  
-
-
-  // Show alert
-  document.querySelector('.alert').style.display = 'block';
-  
-
-  // Hide alert after 3 seconds
-  setTimeout(function(){
-    document.querySelector('.alert').style.display = 'none';
-  },2000);
-   setTimeout(function(){
-  window.location = "https://chat.whatsapp.com/BD76dOvWYZO44Rlp2tF9CF";
- },3000);
-
-  // Clear form
- document.getElementById('contactForm').reset();
- 
-
-  
-}
-
-// Function to get get form values
-function getInputVal(id){
-  return document.getElementById(id).value;
-}
-
-// Save message to firebase
-function saveMessage(name,mail, mobile, college, department,semester){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
-    name: name,
-    mail:mail,
-    mobile:mobile,
-	college:college,
-	department:department,
-	semester:semester,
-    
-  });
-}
-</script>
-
-<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
-  
- 
+		
+		
+		
+		
+    </main>
+    <footer class="page-footer dark">
+        <div class="footer-copyright">
+            <p>© 2020 Copyright Text</p>
+        </div>
+    </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
